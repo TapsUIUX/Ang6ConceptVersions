@@ -1,0 +1,37 @@
+
+<div class="container box">
+
+  <h4>Parent App Component</h4>
+
+   <p *ngIf="checkBox">CLICKED</p>
+  
+  <pre> 
+    data emmited from the component will be displayed Here
+    {{ this.data }}
+  </pre> 
+
+   <section class="jumbotron">
+     Here we gona test the content projection!
+   </section>
+
+   <div class="box">
+      <app-form (form_e)="formSubmitted($event)"> 
+        <h3>Login Form_p</h3>
+        <button class="btn btndefault btn-block">Login</button>
+      </app-form>
+   </div>
+    <br>
+   <div class="box"> 
+      <app-form (form_e)="formSubmitted($event)"> 
+        <h3>Sign Up Form_p</h3>
+
+        <button class="btn btndefault btn-block">Sign Up</button> 
+        
+        <app-check-box (checked_e)="checked($event)"> </app-check-box>
+
+      </app-form>
+        
+   </div>  
+</div>
+
+

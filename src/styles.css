@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; */
+/* deeppurple-amber.css
+indigo-pink.css
+pink-bluegrey.css
+purple-green.css */
+.box{
+    border-radius: 10px;
+    border:1px solid grey;
+    padding: 10px;
+}
+
+div{
+    box-sizing: border-box;
+}
