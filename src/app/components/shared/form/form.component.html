@@ -19,6 +19,8 @@
 
    <ng-content select="app-check-box"></ng-content>
 
+   <p [style.visibility]="!showMessage?'hidden':'visible'" style="color:red"> GREAT ENJOY THE DRINK ! <small> content child demo</small></p>
+
    <ng-content select="button"></ng-content>
     
   </form> 

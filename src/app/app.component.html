@@ -3,7 +3,7 @@
 
   <h4>Parent App Component</h4>
 
-   <p *ngIf="checkBox">CLICKED</p>
+   <p [style.visibility]="!checkBox?'hidden':'visible'">CLICKED</p>
   
   <pre> 
     data emmited from the component will be displayed Here
@@ -28,6 +28,8 @@
         <button class="btn btndefault btn-block">Sign Up</button> 
         
         <app-check-box (checked_e)="checked($event)"> </app-check-box>
+
+        <p>this form has a message inside tha we gonna access thru View Child</p>
 
       </app-form>
         
